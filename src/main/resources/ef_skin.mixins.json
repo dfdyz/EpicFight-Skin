@@ -1,0 +1,19 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_21",
+  "package": "dfdyz.ef_skin.mixins",
+  "client": [
+    "MixinClientPlayerPatch",
+    "MixinLivingEntityPatch",
+    "MixinPlayerRenderer",
+    "MixinItemRenderBase"
+  ],
+  "mixins": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "ef_skin.mixins.refmap.json"
+}
