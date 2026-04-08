@@ -29,7 +29,7 @@ public class ValueUtils {
             return (origin | g);
         }
         else {
-            return (origin & (~g));
+            return (origin & (~g)) & 0x0000FFFF;
         }
     }
 }

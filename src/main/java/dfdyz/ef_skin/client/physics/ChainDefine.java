@@ -2,18 +2,15 @@ package dfdyz.ef_skin.client.physics;
 
 import com.jme3.bullet.collision.shapes.CollisionShape;
 import com.jme3.bullet.joints.Constraint;
-import com.jme3.bullet.joints.JointEnd;
 import com.jme3.bullet.joints.New6Dof;
-import com.jme3.bullet.joints.SixDofSpringJoint;
 import com.jme3.bullet.joints.motors.MotorParam;
 import com.jme3.math.Matrix3f;
-import dfdyz.ef_anim_phy.physics.AnimationPhysics;
 import dfdyz.ef_anim_phy.physics.bodies.DynamicBoneChain;
+import dfdyz.ef_anim_phy.physics.bodies.JointSpring;
 import org.joml.Vector3f;
 import yesman.epicfight.api.model.Armature;
 
 import java.util.HashMap;
-import java.util.Map;
 
 import static com.jme3.bullet.RotationOrder.ZXY;
 

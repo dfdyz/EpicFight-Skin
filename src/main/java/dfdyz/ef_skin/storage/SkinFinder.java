@@ -41,6 +41,7 @@ public class SkinFinder {
 
         Map<String, SkinInfo> result = Maps.newHashMap();
         for (File skin : skins) {
+            if(!skin.isDirectory()) continue;
             try {
                 var info_file = skin.toPath().resolve("info.json").toFile();
                 try (var inputStream = new FileInputStream(info_file)){

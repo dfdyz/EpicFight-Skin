@@ -50,8 +50,8 @@ public class ColliderDefine {
 
     public void prevProcess(){
         mass = limitValue(mass, 0.01f, 10f);
-        move_damping = limitValue(move_damping, 0.05f, 0.8f);
-        rot_damping = limitValue(rot_damping, 0.05f, 0.8f);
+        move_damping = limitValue(move_damping, 0.0f, 0.95f);
+        rot_damping = limitValue(rot_damping, 0.0f, 0.95f);
 
         radius = limitValue(radius, 0.01f, 2f);
         height = limitValue(height, 0.01f, 2f);
