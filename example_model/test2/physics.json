@@ -1,0 +1,239 @@
+{
+  "bodies": [
+    {
+      "type": "capsule",
+      "bind": "Torso",
+      "offset": [0, 0.1, 0],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 0,
+      "radius": 0.2,
+      "height": 0.2
+    },
+    {
+      "type": "capsule",
+      "bind": "Shoulder_R",
+      "offset": [0, 0.15, -0.08],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 1,
+      "radius": 0.08,
+      "height": 0.1
+    },
+    {
+      "type": "capsule",
+      "bind": "Shoulder_L",
+      "offset": [0, 0.15, -0.08],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 1,
+      "radius": 0.08,
+      "height": 0.1
+    },
+    {
+      "type": "box",
+      "bind": "Head",
+      "offset": [0, 0.15, 0],
+      "group": 4,
+      "collision_ignore": [3, 4],
+      "size": [0.3, 0.3, 0.3]
+    },
+    {
+      "type": "capsule",
+      "bind": "Chest",
+      "offset": [0, 0.1, 0],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 0,
+      "radius": 0.15,
+      "height": 0.1
+    },
+    {
+      "type": "capsule",
+      "bind": "Arm_L",
+      "offset": [0, 0.18, 0],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 1,
+      "radius": 0.08,
+      "height": 0.25
+    },
+    {
+      "type": "capsule",
+      "bind": "Hand_L",
+      "offset": [0, 0.25, 0],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 1,
+      "radius": 0.08,
+      "height": 0.25
+    },
+    {
+      "type": "capsule",
+      "bind": "Arm_R",
+      "offset": [0, 0.18, 0],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 1,
+      "radius": 0.08,
+      "height": 0.25
+    },
+    {
+      "type": "capsule",
+      "bind": "Hand_R",
+      "offset": [0, 0.25, 0],
+      "group": 0,
+      "collision_ignore": [0],
+      "axis": 1,
+      "radius": 0.08,
+      "height": 0.25
+    }
+  ],
+  "chains": [
+    {
+      "rare_length": 0.5,
+      "bone_sequence": ["Hair_L.01", "Hair_L.02"],
+      "colliders": {
+        "Hair_L.01": {
+          "type": "capsule",
+          "mass": 0.5,
+          "group": 3,
+          "collision_ignore": [1, 4],
+          "axis": 1,
+          "radius": 0.08,
+          "height": 0.3,
+          "limit": [-20, 180, -2, 2, -30 ,30],
+          "move_damping": 0.5,
+          "rot_damping": 0.5
+        },
+        "Hair_L.02": {
+          "type": "capsule",
+          "mass": 0.4,
+          "group": 1,
+          "collision_ignore": [1, 3],
+          "axis": 1,
+          "radius": 0.08,
+          "height": 0.3,
+          "limit": [-30, 30, -2, 2, -30 ,30],
+          "move_damping": 0.5,
+          "rot_damping": 0.5
+        }
+      }
+    },
+    {
+      "rare_length": 0.5,
+      "bone_sequence": ["Hair_R.01", "Hair_R.02"],
+      "colliders": {
+        "Hair_R.01": {
+          "type": "capsule",
+          "mass": 0.5,
+          "group": 3,
+          "collision_ignore": [2, 4],
+          "axis": 1,
+          "radius": 0.08,
+          "height": 0.3,
+          "limit": [-20, 180, -2, 2, -30, 30],
+          "move_damping": 0.5,
+          "rot_damping": 0.5
+        },
+        "Hair_R.02": {
+          "type": "capsule",
+          "mass": 0.4,
+          "group": 2,
+          "collision_ignore": [2, 3],
+          "axis": 1,
+          "radius": 0.08,
+          "height": 0.3,
+          "limit": [-30, 30, -2, 2, -30, 30],
+          "move_damping": 0.5,
+          "rot_damping": 0.5
+        }
+      }
+    },
+    {
+      "rare_length": 0.1,
+      "bone_sequence": ["DaiMao"],
+      "colliders": {
+        "DaiMao": {
+          "type": "capsule",
+          "mass": 0.5,
+          "group": 3,
+          "collision_ignore": [0, 3],
+          "axis": 1,
+          "radius": 0.08,
+          "height": 0.2,
+          "limit": [-20, 20, -2, 2, -20, 20],
+          "move_damping": 0.5,
+          "rot_damping": 0.5,
+          "joint_stiffness": [10, 5, 10],
+          "joint_damping": [0.5, 0.5, 0.5],
+          "equilibrium_point": [0, 0, 0]
+        }
+      }
+    },
+    {
+      "rare_length": 0.2,
+      "bone_sequence": ["Nai_L", "Nai_L.001"],
+      "colliders": {
+        "Nai_L": {
+          "type": "box",
+          "mass": 10,
+          "group": 3,
+          "collision_ignore": [0, 3],
+          "size": [0.15, 0.15, 0.15],
+          "limit": [-6, 6, -2, 2, -6, 6],
+          "move_damping": 0.5,
+          "rot_damping": 0.5,
+          "joint_stiffness": [100, 25, 100],
+          "joint_damping": [0.5, 0.5, 0.5],
+          "equilibrium_point": [10, 0, 0]
+        },
+        "Nai_L.001": {
+          "type": "capsule",
+          "mass": 0.1,
+          "group": 3,
+          "collision_ignore": [3],
+          "axis": 1,
+          "radius": 0.03,
+          "height": 0.1,
+          "limit": [-30, 120, -2, 2, -60, 60],
+          "move_damping": 0.1,
+          "rot_damping": 0.1,
+          "joint_damping": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    {
+      "rare_length": 0.2,
+      "bone_sequence": ["Nai_R", "Nai_R.001"],
+      "colliders": {
+        "Nai_R": {
+          "type": "box",
+          "mass": 10,
+          "group": 3,
+          "collision_ignore": [0, 3],
+          "size": [0.15, 0.15, 0.15],
+          "limit": [-6, 6, -2, 2, -6, 6],
+          "move_damping": 0.5,
+          "rot_damping": 0.5,
+          "joint_stiffness": [100, 25, 100],
+          "joint_damping": [0.5, 0.5, 0.5],
+          "equilibrium_point": [10, 0, 0]
+        },
+        "Nai_R.001": {
+          "type": "capsule",
+          "mass": 0.1,
+          "group": 3,
+          "collision_ignore": [3],
+          "axis": 1,
+          "radius": 0.03,
+          "height": 0.1,
+          "limit": [-30, 120, -2, 2, -60, 60],
+          "move_damping": 0.1,
+          "rot_damping": 0.1,
+          "joint_damping": [0.1, 0.1, 0.1]
+        }
+      }
+    }
+  ]
+}
